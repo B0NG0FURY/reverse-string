@@ -1,5 +1,11 @@
 def reverse_string(str)
-  
+  length = str.length
+  result = ""
+  while length > 0
+    result += str[length - 1]
+    length -= 1
+  end
+  result
 end
 
 if __FILE__ == $PROGRAM_NAME
